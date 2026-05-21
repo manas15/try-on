@@ -1,8 +1,11 @@
 # LiveLook — Real-Time Virtual Try-On
 
+At Google I/O 2026, Demis Hassabis highlighted DeepMind's focus on World Models as a critical step toward AGI. With real-time video editing via natural language already here, it got me thinking about the immediate applications for entirely new, dynamic user interfaces — and the fitting room was the first thing that came to mind.
+
 What if we could replace crowded, busy fitting rooms in retail stores with intelligent screens?
 
 **LiveLook** is a real-time virtual try-on app that completely changes the browsing experience. It uses real-time video diffusion to render garments onto you — live, as you move.
+
 
 ## How It Works
 
@@ -35,10 +38,6 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) and allow camera access.
 
 Get a Decart API key at [platform.decart.ai](https://platform.decart.ai).
-
-## Background
-
-At Google I/O 2026, Demis Hassabis highlighted DeepMind's focus on World Models as a critical step toward AGI. With real-time video editing via natural language already here, it got me thinking about the immediate applications for entirely new, dynamic user interfaces — and the fitting room was the first thing that came to mind.
 
 ## License
 
