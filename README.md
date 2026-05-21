@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/084f7315-60cf-47be-ba6d-9e5e921eea11
+
 # LiveLook — Real-Time Virtual Try-On
 
 At Google I/O 2026, Demis Hassabis highlighted DeepMind's focus on World Models as a critical step toward AGI. With real-time video editing via natural language already here, it got me thinking about the immediate applications for entirely new, dynamic user interfaces — and the fitting room was the first thing that came to mind.
