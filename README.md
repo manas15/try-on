@@ -6,6 +6,7 @@ What if we could replace crowded, busy fitting rooms in retail stores with intel
 
 **LiveLook** is a real-time virtual try-on app that completely changes the browsing experience. It uses real-time video diffusion to render garments onto you — live, as you move.
 
+<video src="https://github.com/manas15/try-on/releases/download/v1.0/live-look-in.mp4" controls autoplay muted loop width="100%"></video>
 
 ## How It Works
 
