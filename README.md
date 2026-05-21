@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LiveLook — Real-Time Virtual Try-On
+
+What if we could replace crowded, busy fitting rooms in retail stores with intelligent screens?
+
+**LiveLook** is a real-time virtual try-on app that completely changes the browsing experience. It uses real-time video diffusion to render garments onto you — live, as you move.
+
+## How It Works
+
+- **Real-time garment rendering** — Uses the Lucy VTON model (by [Decart](https://decart.ai)) to render clothing onto a live webcam feed in real time via WebRTC.
+- **Gesture-based browsing** — Swipe your hand to browse the product catalog and give a thumbs up or OK sign to add items to your cart, all powered by [Google MediaPipe](https://ai.google.dev/edge/mediapipe).
+- **Voice control** — Search for products by speaking, using the Web Speech API.
+- **Zero UI friction** — No buttons needed. Browse, try on, and shop entirely through natural gestures.
+
+## Tech Stack
+
+- **Next.js** (App Router) — Frontend and API routes
+- **Decart SDK** (`@decartai/sdk`) — Real-time video diffusion streaming
+- **MediaPipe Tasks Vision** — Hand landmark detection and gesture recognition
+- **Web Speech API** — Voice-controlled product search
+- **Tailwind CSS** — Styling
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Add your Decart API key
+echo "DECART_API_KEY=your_key_here" > .env.local
+
+# Run the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and allow camera access.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Get a Decart API key at [platform.decart.ai](https://platform.decart.ai).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Background
 
-## Learn More
+At Google I/O 2026, Demis Hassabis highlighted DeepMind's focus on World Models as a critical step toward AGI. With real-time video editing via natural language already here, it got me thinking about the immediate applications for entirely new, dynamic user interfaces — and the fitting room was the first thing that came to mind.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
